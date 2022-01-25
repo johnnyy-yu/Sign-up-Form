@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign-Up Form</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto+Condensed">
+  <link rel="stylesheet" href="/index.css">
+  <style>
+    *{
+      font-family: "Roboto Condensed", serif;
+    }
+  </style>
+
+<body>
+  <div class="side-bar">
+      <div class="logo">
+        <img src="./img/logo.png" alt="" class="logo-img">
+        <span>Aperture Laboratories</span>
+      </div>
+  </div>
+  <div class="main">
+    <div class="main-description">
+      <img src="./img/aperturelogo.png" alt="" class="main-logo">
+      <div>Aperture Science Laboratories is looking for test subjects to participate in trials of an experimental and highly classified technology!</div>
+      <div>Sign up now to join our wonderful team!</div>
+    </div>
+    <form id="form">
+      <fieldset>
+        <legend>Create an Account</legend>
+
+        <div>
+          <div>
+            <label for="first-name">First Name</label>
+            <input type="text" id="first-name" name="first-name" required>
+          </div>
+          <div>
+            <label for="last-name">Last Name</label>
+            <input type="text" id="last-name" name="last-name" required>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="phone">Phone Number</label>
+            <input type="text" id="phone" name="phone" required>
+          </div>
+        </div>
+
+        <div>
+          <div>
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" required>
+            <div id="error"></div>
+          </div>
+          <div>
+            <label for="password-confirm">Confirm Password</label>
+            <input type="password" id="password-confirm" name="password-confirm" required>
+          </div>
+        </div>
+        <button type="submit">Sign Up</button>
+      </fieldset>
+    </form>
+    <div>Already an Aperture Science Test Subject?<span class="login">Log in</span></div>
+  </div>
+</body>
+<script defer src="./script.js"></script>
+</html>
